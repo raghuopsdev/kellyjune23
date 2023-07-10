@@ -1,0 +1,98 @@
+  125  which git
+  126  whereis git
+  127  git --version
+  128  yum repolist
+  129  yum repolist all
+  130  yum list | grep git
+  131  yum install git
+  132  whoami
+  133  sudo yum install git
+  134  git --version
+  135  whereis git
+  136  which git
+  137  pwd
+  138  mkdir project
+  139  pwd
+  140  cd project
+  141  ls -l
+  142  ls -la
+  143  touch program.txt
+  144  ls -l
+  145  git init
+  146  ls -l
+  147  ls -la
+  148  ls -l
+  149  ll
+  150  git status
+  151  git add program.txt 
+  152  git status
+  153  ls -l
+  154  git commit . -m "V1"
+  155  git config --global --edit
+  156  git commit --amend --reset-author
+  157  git status
+  158  ls -l
+  159  git ls-files
+  160  history
+  161  vi program.txt 
+  162  git status
+  163  git add .
+  164  git status
+  165  git restore --staged program.txt
+  166  git status
+  167  git add .
+  168  git commit . -m "V2"
+  169  git status
+  170  git ls-files
+  171  git log
+  172  ll
+  173  vi program.txt 
+  174  git commit -a -m "V2"
+  175  git log
+  176  ll
+  177  rm program.txt 
+  178  ll
+  179  ls -l
+  180  git ls-files
+  181  git log
+  182  git commit --amend --reset-author
+  183  git log
+  184  git checkout program.txt
+  185  ll
+  186  cat program.txt 
+  187  git status
+  188  rm program.txt
+  189  git status
+  190  git log
+  191  git checkout 67dc62bbc8c467337d06557cd12314bb55b11174
+  192  git log
+  193  ll
+  194  cat program.txt 
+  195  vi program.txt 
+  196  git status
+  197  git checkout
+  198  git log
+  199  git checkout master
+  200  git log
+  201  ll
+  202  cat program.txt 
+  203  git status
+  204  history
+  205  git branch
+  206  git branch dev
+  207  git branch
+  208  git checkout dev
+  209  git branch
+  210  git ls-files
+  211  ls -l
+  212  vi program.txt
+  213  git status
+  214  git commit -a -m "Dev:V4"
+  215  git status
+  216  git log
+  217  git branch
+  218  git checkout master
+  219  git log
+  220  cat program.txt 
+  221  git ls-files
+  222  history
