@@ -1,0 +1,87 @@
+  204  cd project/
+  205  ls -l
+  206  ls -la
+  207  git status
+  208  git branch
+  209  git checkout dev
+  210  git ls-files
+  211  ll
+  212  touch dev.txt
+  213  git status
+  214  git add .
+  215  git status
+  216  git status
+  217  git branch
+  218  git checkout master
+  219  git status
+  220  git checkout dev
+  221  git commit . -m "Dev: dev.txt"
+  222  git status
+  223  git ls-files
+  224  ll
+  225  git checkout master
+  226  ll
+  227  git ls-files
+  228  git branch
+  229  git branch
+  230  git branch qa
+  231  git ls-files
+  232  git branch
+  233  git checkout qa
+  234  ll
+  235  git branch
+  236  git merge dev
+  237  ll
+  238  git branch
+  239  ll
+  240  vi program.txt 
+  241  git status
+  242  git commit . -m "Comm: from QA"
+  243  git status
+  244  git checkout dev
+  245  vi program.txt 
+  246  git commit -a -m "adding a line in dev branch"
+  247  git checkout qa
+  248  git branch
+  249  git merge dev
+  250  git config merge.tool vimdiff
+  251  git config merge.conflictstyle diff3
+  252  git config mergetool.prompt false
+  253  git mergetool
+  254  ls -l
+  255  cat program.txt
+  256  cat program.txt.orig 
+  257  rm program.txt.orig 
+  258  ll
+  259  git status
+  260  git commit -a -m "Merged data from Dev"
+  261  git status
+  262  git branch
+  263  cat program.txt 
+  264  history
+  265  ll
+  266  vi dev.txt 
+  267  vi dev.txt 
+  268  cat dev
+  269  cat dev.txt 
+  270  git branch
+  271  git branch
+  272  git checkout master
+  273  git status
+  274  git commit -a -m "new data"
+  275  git checkout dev
+  276  git branch
+  277  git checkout master
+  278  git branch
+  279  git branch -M main
+  280  git branch
+  281  git remote -v
+  282  git remote
+  283  git remote add origin https://github.com/raghuopsdev/tmpkelly.git
+  284  git remote -v
+  285  git push -u origin main
+  286  git push -u origin main
+  287  git branch
+  288  git push -u origin dev
+  289  git push -u origin dev
+  290  history
