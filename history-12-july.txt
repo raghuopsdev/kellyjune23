@@ -1,0 +1,171 @@
+  207  git status
+  208  git branch
+  209  git checkout dev
+  210  git ls-files
+  211  ll
+  212  touch dev.txt
+  213  git status
+  214  git add .
+  215  git status
+  216  git status
+  217  git branch
+  218  git checkout master
+  219  git status
+  220  git checkout dev
+  221  git commit . -m "Dev: dev.txt"
+  222  git status
+  223  git ls-files
+  224  ll
+  225  git checkout master
+  226  ll
+  227  git ls-files
+  228  git branch
+  229  git branch
+  230  git branch qa
+  231  git ls-files
+  232  git branch
+  233  git checkout qa
+  234  ll
+  235  git branch
+  236  git merge dev
+  237  ll
+  238  git branch
+  239  ll
+  240  vi program.txt 
+  241  git status
+  242  git commit . -m "Comm: from QA"
+  243  git status
+  244  git checkout dev
+  245  vi program.txt 
+  246  git commit -a -m "adding a line in dev branch"
+  247  git checkout qa
+  248  git branch
+  249  git merge dev
+  250  git config merge.tool vimdiff
+  251  git config merge.conflictstyle diff3
+  252  git config mergetool.prompt false
+  253  git mergetool
+  254  ls -l
+  255  cat program.txt
+  256  cat program.txt.orig 
+  257  rm program.txt.orig 
+  258  ll
+  259  git status
+  260  git commit -a -m "Merged data from Dev"
+  261  git status
+  262  git branch
+  263  cat program.txt 
+  264  history
+  265  ll
+  266  vi dev.txt 
+  267  vi dev.txt 
+  268  cat dev
+  269  cat dev.txt 
+  270  git branch
+  271  git branch
+  272  git checkout master
+  273  git status
+  274  git commit -a -m "new data"
+  275  git checkout dev
+  276  git branch
+  277  git checkout master
+  278  git branch
+  279  git branch -M main
+  280  git branch
+  281  git remote -v
+  282  git remote
+  283  git remote add origin https://github.com/raghuopsdev/tmpkelly.git
+  284  git remote -v
+  285  git push -u origin main
+  286  git push -u origin main
+  287  git branch
+  288  git push -u origin dev
+  289  git push -u origin dev
+  290  history
+  291  cd project/
+  292  ll
+  293  ls -la
+  294  git remote -v
+  295  git ls-files
+  296  ll
+  297  git pull origin main
+  298  ll
+  299  ls -l
+  300  git ls-files
+  301  ll
+  302  git remote -v
+  303  git fetch origin main
+  304  git ls-files
+  305  git fetch origin main
+  306  ll
+  307  git pull origin main
+  308  ll
+  309  git branch
+  310  git branch
+  311  vi rebase.txt
+  312  git add .
+  313  git commit . -m "rebase exercise"
+  314  git ls-files
+  315  git branch feature
+  316  git branch
+  317  git checkout feature
+  318  git branch
+  319  git ls-files
+  320  vi rebase.txt 
+  321  git commit -a -m "second line"
+  322  git status
+  323  cat rebase.txt 
+  324  git checkout main
+  325  cat rebase.txt 
+  326  git rebase feature
+  327  git branch
+  328  cat rebase.txt 
+  329  git log
+  330  git branch
+  331  git revert
+  332  git log
+  333  git revert 6df54d5ebba0468e90156039547fd14c142f0b4d
+  334  ll
+  335  cat rebase.txt 
+  336  git revert --continue
+  337  cat rebase.txt 
+  338  git status
+  339  git commit -a -m "revert demo"
+  340  cat rebase.txt 
+  341  git revert --skip
+  342  git log
+  343  git branch
+  344  ll
+  345  git checkout qa
+  346  ll
+  347  git branch main
+  348  git checkout main
+  349  ll
+  350  git log
+  351  git branch
+  352  git checkout qa
+  353  git cherry-pick 11e4a5bf7d8e07f4f8eaed8af7a1fbfdaba31dd9
+  354  ll
+  355  cat fetch.txt 
+  356  git branch
+  357  ls -la
+  358  git branch
+  359  git ls-files
+  360  vi temp.txt
+  361  git add .
+  362  git status
+  363  git checkout main
+  364  git status
+  365  git branch
+  366  vi main.txt
+  367  git stash
+  368  git status
+  369  git add .
+  370  git commit -m "main.txt"
+  371  git stash list
+  372  git stash --help
+  373  git stash apply
+  374  git checkout qa
+  375  git status
+  376  git commit . -m "qa"
+  377  history
