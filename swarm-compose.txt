@@ -1,0 +1,102 @@
+  519  curl -SL https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+  520  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+  521  docker-compose.exe version
+  522  /usr/bin/docker-compose --version
+  523  chmod +x /usr/bin/docker-compose
+  524  echo $PATH
+  525  docker-compose
+  526  docker-compose --version
+  527  docker --version
+  528  docker version
+  529  service docker start
+  530  history
+  531  docker-compose --version
+  532  ps -ef | grep docker
+  533  mkdir composetest
+  534  cd composetest
+  535  pwd
+  536  vi app.py
+  537  ll
+  538  vi requirements.txt
+  539  ll
+  540  vi Dockerfile
+  541  vi docker-compose.yml
+  542  ll
+  543  docker compose up &
+  544  docker-compose up &
+  545  docker images
+  546  docker ps
+  547  docker-compose down
+  548  docker ps
+  549  docker ps -a
+  550  docker rm $(docker ps -a -q)
+  551  docker images
+  552  docker rmi 76b623a21e4c
+  553  docker rmi 3bccd459597f
+  554  docker images
+  555  docker rmi 8278d025bdf0 5dac12372f4a 5dac12372f4a
+  556  docker images
+  557  docker rmi 5dac12372f4a
+  558  docker rmi 5dac12372f4a
+  559  vi app.py 
+  560  docker images
+  561  docker rmi 5dac12372f4a
+  562  docker rmi -f 5dac12372f4a
+  563  docker images
+  564  cd ..
+  565  docker swarm init --advertise-addr 192.168.99.100
+  566  Swarm initialized: current node (dxn1zf6l61qsb1josjja83ngz) is now a manager.
+  567  To add a worker to this swarm, run the following command:
+  568      docker swarm join     --token SWMTKN-1-49nj1cmql0jkz5s954yi3oex3nedyz0fb0xx14ie39trti4wxv-8vxv8rssmk743ojnwacrr2e7c     192.168.99.100:2377
+  569  docker node ls
+  570  docker swarm init 172.31.46.52
+  571  docker node ls
+  572  docker swarm init --help
+  573  docker node ls
+  574  docker info
+  575  docker swarm join-token worker
+  576  docker node ls
+  577  docker node --help
+  578  docker node rm 7gwcr1azcm8fm7es78n11dkjh
+  579  docker node demote 7gwcr1azcm8fm7es78n11dkjh
+  580  docker node ls
+  581  docker swarm --help
+  582  docker swarm leave
+  583  docker swarm leave --force
+  584  docker node ls
+  585  docker swarm init --advertise-addr 13.127.114.143
+  586  docker node ls
+  587  docker swarm join-token worker
+  588  docker node ls
+  589  docker swarm join-token manager
+  590  docker node --help
+  591  docker node ls
+  592  docker service ls
+  593  docker service create --replicas 1 --name helloworld alpine ping docker.com
+  594  docker service ls
+  595  docker images
+  596  docker ps
+  597  [manager1]$ docker service inspect --pretty helloworld
+  598  ID:9uk4639qpg7npwf3fn2aasksr
+  599  Name:helloworld
+  600  Service Mode:REPLICATED
+  601   Replicas:1
+  602  Placement:
+  603  UpdateConfig:
+  604   Parallelism:1
+  605  ContainerSpec:
+  606   Image:alpine
+  607   Args:ping docker.com
+  608  Resources:
+  609  docker service inspect --pretty helloworld
+  610  docker service ps helloworld
+  611  docker service scale helloworld=3
+  612  docker service ps helloworld
+  613  docker service ps
+  614  docker service ps helloworld
+  615  docker service ls
+  616  docker service scale helloworld=1
+  617  docker service ps helloworld
+  618  docker service rm helloworld
+  619  docker service ls
+  620  history
