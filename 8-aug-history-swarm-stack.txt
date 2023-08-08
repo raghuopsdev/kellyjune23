@@ -1,0 +1,105 @@
+ 519  docker node ls
+  520  docker node ls
+  521  docker node ls
+  522  docker node ls
+  523  docker service ls
+  524  docker node ls
+  525  history | grep swarm
+  526  docker node --help
+  527  docker node ls
+  528  docker node inspect x1ofeu60uhlautqkg2w4rb3g1
+  529  docker node inspect --pretty x1ofeu60uhlautqkg2w4rb3g1
+  530  docker node --help
+  531  docker node ls
+  532  docker swarm join-token worker
+  533  docker node ls
+  534  docker node rm x1ofeu60uhlautqkg2w4rb3g1
+  535  docker node ls
+  536  docker node rm yz9et4yaocularohe9o85f17x
+  537  docker node demote worker  yz9et4yaocularohe9o85f17x
+  538  docker node demote worker yz9et4yaocularohe9o85f17x
+  539  docker node demote --help
+  540  docker node demote yz9et4yaocularohe9o85f17x
+  541  docker node demote yz9et4yaocularohe9o85f17x --force
+  542  docker node demote yz9et4yaocularohe9o85f17x worker
+  543  docker node ls
+  544  docker node demote yz9et4yaocularohe9o85f17x
+  545  docker node ls
+  546  docker node demote yz9et4yaocularohe9o85f17x
+  547  docker node ls
+  548  docker node leave yz9et4yaocularohe9o85f17x
+  549  docker node rm yz9et4yaocularohe9o85f17x
+  550  docker node demote worker yz9et4yaocularohe9o85f17x
+  551  docker node demote yz9et4yaocularohe9o85f17x
+  552  docker node ls
+  553  docker swarm leave --force
+  554  docker node ls
+  555  docker swarm init
+  556  docker node ls
+  557  docker swarm join-token worker
+  558  docker node ls
+  559  docker node ls
+  560  docker service ls
+  561  docker service create --replicas 1 --name web httpd
+  562  docker service ls
+  563  docker ps
+  564  docker service scale web=2
+  565  docker service ps web
+  566  docker service ps web
+  567  docker service ps web
+  568  docker service ps web
+  569  docker node ls
+  570  docker node inspect --pretty g69gf3616f2vg5pvgke63be7p
+  571  docker node inspect g69gf3616f2vg5pvgke63be7p
+  572  docker service ls
+  573  docker service rm jvqk81b9m6lx
+  574  docker service ls
+  575  mkdir stackdemo
+  576  cd stackdemo
+  577  vi app.py
+  578  vi requirements.txt
+  579  vi Dockerfile
+  580  vi docker-compose.yml
+  581  docker-compose up -d
+  582  docker-compose ps
+  583  docker volume ls
+  584  docker-compose down --volumes
+  585  docker volume ls
+  586  docker-compose ps
+  587  docker-compose push
+  588  docker ps
+  589  docker images
+  590  docker-compose up -d
+  591  docker ps
+  592  docker-compose push
+  593  docker images
+  594  docker pull registry:v2
+  595  docker pull registry
+  596  docker run -d -p 5000:5000 registry
+  597  docker ps
+  598  docker-compose push
+  599  docker-compose down --volumes
+  600  docker ps
+  601  docker stack deploy --compose-file docker-compose.yml stackdemo
+  602  vi docker-compose.yml 
+  603  vi docker-compose.yml 
+  604  cd ..
+  605  mkdir stack-sample
+  606  cd stack-sample/
+  607  vi docker-compose.yml
+  608  cat docker-compose.yml 
+  609  docker-compose up -d
+  610  vi docker-compose.yml 
+  611  docker-compose down
+  612  docker-compose up -d
+  613  docker ps
+  614  docker-compose push
+  615  docker-compose down
+  616  docker ps
+  617  docker stack deploy --compose-file docker-compose.yml stackdemo1
+  618  docker stack ls
+  619  docker stack --help
+  620  docker stack ps stackdemo1
+  621  docker ps
+  622  docker node ls
+  623  history
