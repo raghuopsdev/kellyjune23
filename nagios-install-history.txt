@@ -1,0 +1,26 @@
+ 881  wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.13.tar.gz
+  882  ll
+  883  tar -xzvf nagios-4.4.13.tar.gz 
+  884  cd nagios-4.4.13/
+  885  ./configure 
+  886  make
+  887  make all
+  888  make install-groups-users
+  889  usermod -a -G nagios apache
+  890  make install
+  891  make install-daemoninit
+  892  chkconfig --level 2345 httpd on
+  893  make install-commandmode
+  894  make install-config
+  895  make install-webconf
+  896  service httpd start
+  897  service nagios start
+  898  ps -ef | grep httpd
+  899  service httpd stop
+  900  service httpd start
+  901  ps -ef | grep nagios
+  902  service nagios stop
+  903  service nagios start
+  904  htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+  905  htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+  906  history
