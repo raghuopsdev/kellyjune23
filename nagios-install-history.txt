@@ -24,3 +24,16 @@
   904  htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
   905  htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
   906  history
+
+Plugins
+
+ 910  wget https://nagios-plugins.org/download/nagios-plugins-2.4.6.tar.gz
+  911  ll
+  912  tar -xzvf nagios-plugins-2.4.6.tar.gz 
+  913  ll
+  914  cd nagios-plugins-2.4.6/
+  915  ll
+  916  ./configure
+  917  make all
+  918  make install
+  919  history
