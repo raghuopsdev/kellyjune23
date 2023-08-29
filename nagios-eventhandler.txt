@@ -1,0 +1,346 @@
+Event Handler
+-------------------------
+https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/3/en/eventhandlers.html#:~:text=Event%20handlers%20are%20optional%20system,Restarting%20a%20failed%20service
+
+
+Plugins of Nagios
+-----------------------------
+https://exchange.nagios.org/directory/Plugins
+
+
+
+History
+-------------
+
+ 784  yum list | grep python2
+  785  pip list | grep python
+  786  ps -ef | grep httpd
+  787  rpm -qa | grep httpd
+  788  service httpd start
+  789  ps -ef | grep httpd
+  790  yum remove httpd
+  791  service httpd stop
+  792  ps -ef | grep httpd
+  793  df -Th
+  794  cd /tmp/
+  795  ll
+  796  ll
+  797  ll chips/
+  798  ls -l
+  799  cat line1 
+  800  yum repolist
+  801  cd /etc/yum.repos.d/
+  802  vi epel.repo
+  803  ls -lrth
+  804  yum update
+  805  yum repolist all
+  806  yum list | grep ansible
+  807  which ansible
+  808  history
+  809  cd /etc/httpd/
+  810  ll
+  811  which ansible
+  812  yum install ansible
+  813  python --version
+  814  yum repolist
+  815  yum list | grep python
+  816  pip install ansible
+  817  which ansible
+  818  yum repolist
+  819  pip install ansible
+  820  which ansible
+  821  ansible --version
+  822  which pip
+  823  yum list | grep pip
+  824  yum list | grep python37
+  825  python --version
+  826  ps -ef | grep docker
+  827  which docker
+  828  yum install -y docker; service docker start
+  829  service docker start
+  830  ps -ef | grep docker
+  831  docker images
+  832  docker ps 
+  833  docker ps -a
+  834  docker swarm join --token SWMTKN-1-5ammffdqsplc4v9mz37cfkt2iskesphoo0sycpatw3ig9i4qhw-9z1him50sbn60qgpjhdpqwokh 13.127.114.143:2377
+  835  docker node ls
+  836  docker ps
+  837  docker images
+  838  docker ps
+  839  docker images
+  840  service docker start
+  841  ps -ef | grep docker
+  842  docker ps
+  843  docker swarm join --token SWMTKN-1-25ypvznk6f9u4907kyf32rhfzs2n76g429s8ze02yhq4n7ktpq-07ym7n1kj36xkwj407s309570 172.31.46.52:2377
+  844  docker swarm leave
+  845  docker swarm join --token SWMTKN-1-25ypvznk6f9u4907kyf32rhfzs2n76g429s8ze02yhq4n7ktpq-07ym7n1kj36xkwj407s309570 172.31.46.52:2377
+  846  docker ps
+  847  docker ps
+  848  docker images
+  849  service docker stop
+  850  docker ps
+  851  docker ps
+  852  ps -ef | grep docker
+  853  docker node ls
+  854  docker ps
+  855  docker ps
+  856  yum list | grep nagios
+  857  yum install -y nagios
+  858  mkdir soft
+  859  cd soft
+  860  ll
+  861  wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.3.4.tar.gz
+  862  ll
+  863  tar -xzvf nagios-4.3.4.tar.gz 
+  864  ll
+  865  cd nagios-4.3.4/
+  866  ll
+  867  ls
+  868  yum install -y gcc glibc glibc-common wget unzip httpd php gd gd-devel perl postfix
+  869  df -h
+  870  yum install openssl-devel
+  871  ./configure
+  872  make all
+  873  yum list | grep collect2
+  874  yum list | grep collect
+  875  yum install -y collectd
+  876  make all
+  877  cd ..
+  878  clear
+  879  ll
+  880  rm -rf nagios-4.3.4
+  881  wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.13.tar.gz
+  882  ll
+  883  tar -xzvf nagios-4.4.13.tar.gz 
+  884  cd nagios-4.4.13/
+  885  ./configure 
+  886  make
+  887  make all
+  888  make install-groups-users
+  889  usermod -a -G nagios apache
+  890  make install
+  891  make install-daemoninit
+  892  chkconfig --level 2345 httpd on
+  893  make install-commandmode
+  894  make install-config
+  895  make install-webconf
+  896  service httpd start
+  897  service nagios start
+  898  ps -ef | grep httpd
+  899  service httpd stop
+  900  service httpd start
+  901  ps -ef | grep nagios
+  902  service nagios stop
+  903  service nagios start
+  904  htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+  905  htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+  906  history
+  907  ll
+  908  cd ..
+  909  ll
+  910  wget https://nagios-plugins.org/download/nagios-plugins-2.4.6.tar.gz
+  911  ll
+  912  tar -xzvf nagios-plugins-2.4.6.tar.gz 
+  913  ll
+  914  cd nagios-plugins-2.4.6/
+  915  ll
+  916  ./configure
+  917  make all
+  918  make install
+  919  history
+  920  cd /usr/local/nagios/
+  921  ll
+  922  cd etc/
+  923  ll
+  924  vi nagios.cfg 
+  925  cd objects/
+  926  ll
+  927  cls
+  928  clear
+  929  ps -ef | grep httpd
+  930  ps -ef | grep nagios
+  931  cd /usr/local/nagios/
+  932  ll
+  933  cd etc/
+  934  ll
+  935  cd objects/
+  936  ll
+  937  vi localhost.cfg 
+  938  vi templates.cfg 
+  939  vi localhost.cfg 
+  940  vi commands.cfg 
+  941  vi localhost.cfg 
+  942  vi commands.cfg 
+  943  ll
+  944  cd ..
+  945  ll
+  946  vi resource.cfg 
+  947  cd /usr/local/nagios/libexec
+  948  ls
+  949  check_ping
+  950  ls check_ping 
+  951  ./check_ping -help
+  952  ls
+  953  cd -
+  954  ll
+  955  cd objects/
+  956  ll
+  957  vi localhost.cfg 
+  958  service nagios reload
+  959  vi localhost.cfg 
+  960  service nagios reload
+  961  date
+  962  ll
+  963  vi contacts.cfg 
+  964  vi templates.cfg 
+  965  service nagios reload
+  966  clear
+  967  which mailx
+  968  yum install mailx
+  969  clear
+  970  service nagios reload
+  971  vi localhost.cfg 
+  972  service nagios reload
+  973  date
+  974  cd ..
+  975  ll
+  976  vi nagios.cfg 
+  977  pwd
+  978  cd ..
+  979  ll
+  980  cd etc/
+  981  ll
+  982  cat nagios.cfg 
+  983  cat nagios.cfg  | grep log_file
+  984  pwd
+  985  cd ../var/
+  986  ll
+  987  tail -10f nagios.log 
+  988  cd ..
+  989  ll
+  990  cd etc/
+  991  ll
+  992  cd objects/
+  993  ll
+  994  vi templates.cfg 
+  995  ll
+  996  vi timeperiods.cfg 
+  997  vi templates.cfg 
+  998  vi windows.cfg 
+  999  clear
+ 1000  ps -ef | grep nagios
+ 1001  ps -ef | grep httpd
+ 1002  cd /usr/local/nagios/
+ 1003  ll
+ 1004  cd etc/
+ 1005  pwd
+ 1006  ll
+ 1007  clear
+ 1008  ll
+ 1009  cd objects/
+ 1010  ll
+ 1011  vi localhost.cfg 
+ 1012  service nagios reload
+ 1013  ps -ef | grep tomcat
+ 1014  service tomcat restart
+ 1015  yum list | grep tomcat
+ 1016  yum install tomcat9
+ 1017  history | grep tomcat
+ 1018  cd /home/ec2-user/apache-tomcat-8.5.90/bin/
+ 1019  ll
+ 1020  ./startup.sh 
+ 1021  ps -ef | grep tomcat
+ 1022  netstat -tnlp | grep 3407
+ 1023  pwd
+ 1024  clear
+ 1025  ll
+ 1026  pwd
+ 1027  cd /usr/local/nagios/libexec/
+ 1028  ll
+ 1029  clear
+ 1030  ls
+ 1031  vi chec_s_tomcat.sh
+ 1032  ls
+ 1033  chmod +x chec_s_tomcat.sh 
+ 1034  mv chec_s_tomcat.sh check_tomcat
+ 1035  ./check_tomcat --help
+ 1036  ./check_tomcat
+ 1037  vi check_tomcat 
+ 1038  vi check_tomcat 
+ 1039  ./check_tomcat
+ 1040  cd ..
+ 1041  ll
+ 1042  cd etc/
+ 1043  ll
+ 1044  cd objects/
+ 1045  ll
+ 1046  vi localhost.cfg 
+ 1047  vi commands.cfg 
+ 1048  service nagios reload
+ 1049  service nagios stop
+ 1050  service nagios start
+ 1051  ps -ef | grep tomcat
+ 1052  ps -ef | grep httpd
+ 1053  ps -ef | grep nagios
+ 1054  ll
+ 1055  vi localhost.cfg 
+ 1056  vi commands.cfg 
+ 1057  service nagios reload
+ 1058  service nagios start
+ 1059  vi commands.cfg 
+ 1060  service nagios start
+ 1061  vi commands.cfg 
+ 1062  vi localhost.cfg 
+ 1063  service nagios start
+ 1064  vi localhost.cfg 
+ 1065  service nagios restart
+ 1066  date
+ 1067  vi contacts.cfg 
+ 1068  vi templates.cfg 
+ 1069  vi commands.cfg 
+ 1070  service nagios reload
+ 1071  clear
+ 1072  cd ..
+ 1073  ll
+ 1074  cd objects/
+ 1075  ll
+ 1076  cd ../..
+ 1077  ll
+ 1078  cd etc/
+ 1079  ll
+ 1080  cd objects/
+ 1081  ll
+ 1082  cd ../
+ 1083  ll
+ 1084  pwd
+ 1085  cd ..
+ 1086  ll
+ 1087  cd libexec/
+ 1088  ll
+ 1089  ls
+ 1090  vi restart_httpd
+ 1091  ls
+ 1092  chmod +x restart_httpd 
+ 1093  ./restart_httpd 
+ 1094  ./restart_httpd OK
+ 1095  ll
+ 1096  ls
+ 1097  pwd
+ 1098  cd ..
+ 1099  ls
+ 1100  cd etc/
+ 1101  ll
+ 1102  cd objects/
+ 1103  ls
+ 1104  vi commands.cfg 
+ 1105  vi localhost.cfg 
+ 1106  cd ../../libexec/
+ 1107  ls
+ 1108  mv restart_httpd restart-httpd
+ 1109  cd -
+ 1110  vi localhost.cfg 
+ 1111  ps -ef | grep httpd
+ 1112  vi localhost.cfg 
+ 1113  service nagios reload
+ 1114  date
+ 1115  history
