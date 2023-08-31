@@ -1,0 +1,62 @@
+https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-build
+
+AWS IAM
+aws configure (to configure in your terraform machine ec2 machine)
+
+
+988  cd learn-terraform-docker-container/
+  989  ll
+  990  vi main.tf 
+  991  vi main.tf 
+  992  terraform --help
+  993  terraform --version
+  994  terraform --help
+  995  terramform --providers
+  996  terraform providers
+  997  terraform show
+  998  terraform --help
+  999  clear
+ 1000  cd ..
+ 1001  clear
+ 1002  pwd
+ 1003  ll
+ 1004  cd learn-terraform-docker-container/
+ 1005  clear
+ 1006  ll
+ 1007  cd ..
+ 1008  aws config
+ 1009  aws configure
+ 1010  aws s3 ls
+ 1011  aws ec2 ls
+ 1012  clear
+ 1013  mkdir learn-terraform-aws-instance
+ 1014  cd learn-terraform-aws-instance
+ 1015  touch main.tf
+ 1016  vi main.tf 
+ 1017  pwd
+ 1018  ll
+ 1019  terraform providers
+ 1020  terraform init
+ 1021  clear
+ 1022  ll
+ 1023  terraform providers
+ 1024  ls -la
+ 1025  cd .terraform/
+ 1026  ll
+ 1027  ll providers/
+ 1028  ll providers/registry.terraform.io/hashicorp/aws/
+ 1029  ll providers/registry.terraform.io/hashicorp/aws/4.67.0/
+ 1030  ll providers/registry.terraform.io/hashicorp/aws/4.67.0/linux_amd64/
+ 1031  terraform fmt
+ 1032  terraform validate
+ 1033  cd ..
+ 1034  terraform validate
+ 1035  terraform fmt
+ 1036  vi main.tf 
+ 1037  terraform apply
+ 1038  terraform show
+ 1039  terraform state list
+ 1040  ll
+ 1041  terraform destroy
+ 1042  history
+
